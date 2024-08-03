@@ -1,0 +1,12 @@
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+*.class
+*.jar
+
+# Mac
+.DS_Store
+
