@@ -13,6 +13,11 @@ public class CLI {
         mainHome(list);
     }
 
+    public static void gohome(){
+        LinkedList list = new LinkedList();
+        mainHome(list);
+    }
+
     public static void mainHome(LinkedList list) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("*******************************************************************WELCOME..!**************************************************************************************\n");
@@ -54,7 +59,7 @@ public class CLI {
         System.out.print("\n\t\t\t\t***HOME***\n\n");
         System.out.print("\tType the word 'add' to add a comment\n");
         System.out.print("\tType the word 'edit' to edit user\n");
-        System.out.print("\tType the word 'manage' to manage expences & income\n");
+        System.out.print("\tType the word 'manage' to manage expenses & income\n");
         System.out.print("\tType the word 'payment' to add/edit/view payments\n");
         System.out.print("\tType the word 'sort' to sort user data\n");
         System.out.print("\tType the word 'search' to search expenses\n");
@@ -180,7 +185,7 @@ public class CLI {
         else{
             System.out.print("****Please enter correct key word!****");
         }
-        searchExpenses(username,list);
+        //searchExpenses(username,list);
     }
 
 
@@ -253,7 +258,7 @@ public class CLI {
         public static void getPriorityPaymentsFromUser(java.util.LinkedList<PendingPayment> priorityList) {
             Scanner scanner = new Scanner(System.in);
             System.out.print("___________________________________________________________________________________________________________________________________________________________________________________________________________________________\n\t");
-            System.out.print("\n\t\t\t\t***ADD NEW PATMENTS***\n\n");
+            System.out.print("\n\t\t\t\t***ADD NEW PAYMENTS***\n\n");
 
             while (true) {
                 System.out.print("Enter description: ");

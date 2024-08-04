@@ -1,9 +1,5 @@
 package ExpenseManagementCLI;
 
-import java.io.*;
-import java.util.LinkedList;
-import java.util.Scanner;
-
 class PendingPayment {
     String description;
     double amount;

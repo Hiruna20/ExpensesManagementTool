@@ -25,7 +25,7 @@ public class UserInputLinkedList {
         // Load existing data from the file
         loadFromFile(incomeEntries, expenseEntries, userName);
 
-        boolean exit = false;
+        boolean restart = false;
         while (true) {
             System.out.print("___________________________________________________________________________________________________________________________________________________________________________________________________________________________\n\t");
             System.out.print("\n\t\t\t\t***MANAGE EXPECES & INCOME***\n\n");
@@ -54,14 +54,17 @@ public class UserInputLinkedList {
                     break;
 
                 case 4:
-                    exit = true;
+                    restart = true;
                     break;
 
                 default:
                     System.out.println("Invalid choice. Please try again.");
             }
-            CLI cli = new CLI();
-            cli.main();
+            while (restart){
+                CLI.gohome();
+                restart = false;
+            }
+
         }
     }
 
