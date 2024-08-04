@@ -74,9 +74,15 @@ class LinkedList {
     public void editUserData(String currentName, String newName, double newIncome, double newSavings) {
         Node node = findNodeByName(currentName);
         if (node != null) {
-            node.name = newName;
-            node.income = newIncome;
-            node.savings = newSavings;
+            if (newName != null) {
+                node.name = newName;
+            }
+            if (newIncome >= 0) { // Assuming -1 indicates no change
+                node.income = newIncome;
+            }
+            if (newSavings >= 0) { // Assuming -1 indicates no change
+                node.savings = newSavings;
+            }
             System.out.println("User data updated successfully.");
         } else {
             System.out.println("User not found.");
