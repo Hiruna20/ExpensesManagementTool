@@ -16,6 +16,7 @@ public class CLI {
     public static void gohome(){
         LinkedList list = new LinkedList();
         mainHome(list);
+        //experimenting to rerun main method
     }
 
     public static void mainHome(LinkedList list) {

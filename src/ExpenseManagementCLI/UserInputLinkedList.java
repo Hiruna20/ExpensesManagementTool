@@ -60,6 +60,7 @@ public class UserInputLinkedList {
                 default:
                     System.out.println("Invalid choice. Please try again.");
             }
+            //hope this work
             while (restart){
                 CLI.gohome();
                 restart = false;
